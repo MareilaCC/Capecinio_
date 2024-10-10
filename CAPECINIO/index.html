@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Responsive Portfolio Website</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+
+        <header class="header">
+            <a href="#home" class="logo">Mariela
+            <span>Capecinio</span></a>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about me">About Me</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#media">Media</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hi. It's <span>Mariela</span></h1>
+                <h3 class="text-animation">I'm a <span></span></h3>
+
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/mariela.capablancacapecinio/"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="https://www.instagram.com/ella_cap05/"><i class='bx bxl-instagram-alt' ></i></a> 
+                    <a href="https://github.com/MareilaCC"><i class='bx bxl-github' ></i></a>
+                      
+                </div>
+
+                <div class="btn-group">
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+            </div>
+                <div class="home-img">
+                    <img src="Profilepic1.jpg" alt="">
+                </div>   
+        </section>
+
+        <section class="about me" id="about me">
+            <h2 class="heading">About Me</h2>
+            <p class="text">     I am Mariela C. Capecinio, 19 years old. My actual self is that I am an introverted person.
+                 I prefer small group interactions over large social gatherings because I always get nervous and tongue-tied when I am in front of many people. 
+                 I feel like I have done something wrong, which is why everyone is looking at me.</p><br>
+            <p class="text">     My ideal self is to improve in my studies, especially in my chosen college course, BSIT.
+                 I am not yet very familiar with coding and how to do it, so I am studying and exploring it to become more familiar with coding.
+            </p>   
+              
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h2 class="heading">Gallery</h2>
+            <div class="gallery-container">
+                <div class="box" onclick="toggleImages('family')">Family</div>
+                <div class="box" onclick="toggleImages('drawing')">Drawing</div>
+                <div class="box" onclick="toggleImages('childhood')">Childhood</div>
+            </div>
+
+            <div id="family" class="images">
+                <img src="littlesister.jpg" alt="Family1">
+                <img src="Selfpic.jpg" alt="Family2">
+                <img src="Family3.jpg" alt="Family3">
+                <img src="Family4.jpg" alt="Family4">
+                <img src="Family5.jpg" alt="Family5">
+                <img src="Family6.jpg" alt="Family6">   
+            </div>
+
+            <div id="drawing" class="images">
+                <img src="RealisticBunny.jpg" alt="Drawing1">
+                <img src="Dogsketch.jpg" alt="Drawing2">
+                <img src="Birdsketch.jpg" alt="Drawing3">
+                <img src="catdraw.jpg" alt="Drawing4">
+                <img src="GreenAngelCat.jpg" alt="Drawing5">
+                <img src="incomdraw.jpg" alt="Drawing6">
+                <img src="Lionsketch.jpg" alt="Drawing7">
+                <img src="Nesukodraw.jpg" alt="Drawing8">
+                <img src="Squirreldraw.jpg" alt="Drawing9">
+                <img src="Tigersketch.jpg" alt="Drawing10">
+                <img src="wolfsketch.jpg" alt="Drawing11">
+            </div>
+
+            <div id="childhood" class="images">
+                <img src="Babypic1.jpg" alt="Childhood1">
+                <img src="Babypic2.jpg" alt="Childhood2">
+                <img src="Childhood3.jpg" alt="Childhood3">
+                <img src="Childhood4.jpg" alt="Childhood4">
+                <img src="Childhood5.jpg" alt="Childhood5">
+            </div>
+        </section>
+
+        <section class="media" id="media">
+            <h2 class="heading">Media</h2>
+            <div class="video-player">
+                <h2>Watch this video</h2>
+                <iframe width="420" height="345" src="drawingVideo.mp4">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+
+            <form action="">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text"
+                        placeholder="Full Name">
+                        <input type="email"
+                        placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <input type="number"
+                        placeholder="Phone Number">
+                        <input type="text"
+                        placeholder="Subject">
+                    </div>
+                </div>
+
+                <div class="input-group-2">
+                    <textarea name="" id="" cols="30"
+                    rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </div>
+            </form>
+        </section>
+        
+        <footer class="footer">
+            <div class="social">
+                <a href="https://web.facebook.com/mariela.capablancacapecinio/"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="https://www.instagram.com/ella_cap05/"><i class='bx bxl-instagram-alt' ></i></a> 
+                <a href="https://github.com/MareilaCC"><i class='bx bxl-github' ></i></a>
+            </div>
+
+            <ul class="list">
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+
+                <li>
+                    <a href="#">About Me</a>
+                </li>
+
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="#">Media</a>
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                © Mariela Capecinio | All Rights Reserved   
+            </p>
+        </footer>
+       <script src="app.js"></script>
+    </body>
+</html>
